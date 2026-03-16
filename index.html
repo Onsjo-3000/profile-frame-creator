@@ -4,25 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autoliv Profile Frame Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f0f2f5;
+      font-family: 'Archivo', sans-serif;
+      background: #f4f5f7;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 2rem 1rem;
-      color: #1a1a2e;
+      color: #212529;
     }
     h1 {
       font-size: 1.8rem;
+      font-weight: 400;
       margin-bottom: 0.3rem;
-      color: #1a1a2e;
+      color: #163B77;
     }
     .subtitle {
-      color: #666;
+      color: #5a6068;
       margin-bottom: 2rem;
       font-size: 0.95rem;
     }
@@ -61,7 +65,7 @@
     }
     .step-label {
       display: inline-block;
-      background: #4a6fa5;
+      background: #163B77;
       color: #fff;
       width: 22px; height: 22px;
       border-radius: 50%;
@@ -84,7 +88,7 @@
       position: relative;
     }
     .upload-area:hover, .upload-area.dragover {
-      border-color: #4a6fa5;
+      border-color: #163B77;
       background: #f7f9fd;
     }
     .upload-area .icon {
@@ -93,13 +97,13 @@
       opacity: 0.5;
     }
     .upload-area p { color: #888; font-size: 0.85rem; }
-    .upload-area .file-name { color: #4a6fa5; font-weight: 600; margin-top: 0.4rem; }
+    .upload-area .file-name { color: #163B77; font-weight: 600; margin-top: 0.4rem; }
     .upload-area .thumb {
       width: 80px; height: 80px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 0.5rem;
-      border: 2px solid #4a6fa5;
+      border: 2px solid #163B77;
     }
     input[type="file"] { display: none; }
 
@@ -125,11 +129,11 @@
       justify-content: center;
       padding: 6px;
     }
-    .frame-option:hover { border-color: #a0b4d0; transform: translateY(-2px); }
+    .frame-option:hover { border-color: #8ca3c4; transform: translateY(-2px); }
     .frame-option.selected {
-      border-color: #4a6fa5;
-      box-shadow: 0 0 0 3px rgba(74,111,165,0.2);
-      background: #f5f8ff;
+      border-color: #163B77;
+      box-shadow: 0 0 0 3px rgba(22,59,119,0.2);
+      background: #f2f5fa;
     }
     .frame-option img {
       width: 110px;
@@ -179,13 +183,14 @@
       margin-bottom: 0.75rem;
     }
     .download-btn {
-      background: #4a6fa5;
+      background: #163B77;
       color: #fff;
       border: none;
       padding: 0.8rem 2.5rem;
-      border-radius: 10px;
+      border-radius: 4px;
+      font-family: 'Archivo', sans-serif;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       cursor: pointer;
       transition: all 0.2s;
       width: 100%;
@@ -193,9 +198,9 @@
       letter-spacing: 0.02em;
     }
     .download-btn:hover:not(:disabled) {
-      background: #3a5a8a;
+      background: #0f2a57;
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(74,111,165,0.3);
+      box-shadow: 0 4px 12px rgba(22,59,119,0.3);
     }
     .download-btn:disabled { background: #d0d5dd; cursor: not-allowed; }
   </style>
